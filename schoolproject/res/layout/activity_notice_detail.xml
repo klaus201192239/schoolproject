@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".NoticeDetail" >
+
+    <RelativeLayout
+        android:id="@+id/noticedetail_lv_one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/noticedetail" >
+
+        <Button
+            android:id="@+id/noticedetail_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclick" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/noticedetail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#E9C194"
+        android:gravity="center"
+        android:layout_below="@id/noticedetail_lv_one" 
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/noticedetail_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noticedetail_title"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/noticedetail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noticedetail_time"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/noticedetail_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noticedetail_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

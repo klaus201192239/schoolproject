@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/myactivity_lv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/myactivity" >
+
+        <Button
+            android:id="@+id/myactivity_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="to_back" />
+    </RelativeLayout>
+
+    <me.maxwin.view.XListView
+        android:id="@+id/myactivity_xListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myactivity_lv_title"
+        android:layout_above="@+id/myactivity_lv_botm"
+        android:cacheColorHint="#00000000"
+        android:divider="#EEEEEEEE"
+        android:dividerHeight="20dp"
+        android:scrollbars="none" >
+    </me.maxwin.view.XListView>
+
+    <RelativeLayout
+        android:id="@+id/myactivity_lv_botm"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="20dp"
+        android:background="#EFEFEF" >
+    </RelativeLayout>
+</RelativeLayout>

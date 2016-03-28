@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ManagerTS" >
+
+    <RelativeLayout
+        android:id="@+id/managerts_lv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/acmana" >
+
+        <Button
+            android:id="@+id/managerts_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclick" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/managerts_lv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/managerts_lv_title"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/imgcontentstring"
+            android:scaleType="fitXY" 
+            android:src="@drawable/showme"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/managerts_lv_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/managerts_lv_img"
+        android:layout_marginTop="40dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/managerts_student"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/studentin"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/imgcontentstring"
+            android:onClick="btonclick"/>
+
+        <ImageView
+            android:id="@+id/managerts_teacher"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/managerts_student"
+            android:src="@drawable/teacher"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/imgcontentstring"
+            android:onClick="btonclick" />
+    </RelativeLayout>
+
+</RelativeLayout>

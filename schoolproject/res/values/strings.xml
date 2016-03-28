@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">N次方</string>
+    <string name="app_title">一路走来 一路风景</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="imgcontentstring">Hello world!</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载~</string>
+    <string name="xlistview_header_last_time">静静等待两秒钟，安静的你</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="guideinapp">点击进入，开始你的旅程</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register_user">RegisterUser</string>
+    <string name="title_activity_loader_data">LoaderData</string>
+    <string name="title_activity_register_info">RegisterInfo</string>
+    <string name="title_activity_register_school">RegisterSchool</string>
+    <string name="title_activity_test_net">TestNet</string>
+    <string name="title_activity_in">InActivity</string>
+    <string name="title_activity_in_activity_detail">InActivityDetail</string>
+    <string name="title_activity_in_activity_comment">InActivityComment</string>
+    <string name="title_activity_only_sign_up">OnlySignUp</string>
+    <string name="title_activity_create_team">CreateTeam</string>
+    <string name="title_activity_other_team_list">OtherTeamList</string>
+    <string name="title_activity_join_team">JoinTeam</string>
+    <string name="title_activity_join_team_verify">JoinTeamVerify</string>
+    <string name="title_activity_out">OutActivity</string>
+    <string name="title_activity_out_activity_detail">OutActivityDetail</string>
+    <string name="title_activity_out_activity_comment">OutActivityComment</string>
+    <string name="title_activity_user_center">UserCenter</string>
+    <string name="title_activity_change_user_info">ChangeUserInfo</string>
+    <string name="title_activity_change_user_school">ChangeUserSchool</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_my_activity_detail">MyActivityDetail</string>
+    <string name="title_activity_sign_in">SignIn</string>
+    <string name="title_activity_activity_integral">ActivityIntegral</string>
+    <string name="title_activity_manager_ts">ManagerTS</string>
+    <string name="title_activity_manager_teacher">ManagerTeacher</string>
+    <string name="title_activity_manager">ManagerActivity</string>
+    <string name="title_activity_manager_activity_detail">ManagerActivityDetail</string>
+    <string name="title_activity_manager_activity_person">ManagerActivityPerson</string>
+    <string name="title_activity_manager_activity_notice">ManagerActivityNotice</string>
+    <string name="title_activity_my_teams">MyTeams</string>
+    <string name="title_activity_examine_team">ExamineTeam</string>
+    <string name="title_activity_notice">Notice</string>
+    <string name="title_activity_notice_detail">NoticeDetail</string>
+    <string name="title_activity_system_settings">SystemSettings</string>
+    <string name="title_activity_change_pwd">ChangePwd</string>
+    <string name="title_activity_update_systems">UpdateSystems</string>
+    <string name="title_activity_suggestion">Suggestion</string>
+    <string name="title_activity_choose_organization">ChooseOrganization</string>
+    <string name="title_activity_call_over">CallOver</string>
+    <string name="title_activity_download_apk">DownloadApk</string>
+    <string name="title_activity_get_pwd_back">GetPwdBack</string>
+
+</resources>

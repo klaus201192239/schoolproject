@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/signin_lv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/baomingren" >
+
+        <Button
+            android:id="@+id/signin_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclik" />
+
+    </RelativeLayout>
+
+    <me.maxwin.view.XListView
+        android:id="@+id/signin_xListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/signin_di"
+        android:layout_below="@id/signin_lv_title"
+        android:cacheColorHint="#00000000" >
+    </me.maxwin.view.XListView>
+
+     <RelativeLayout
+        android:id="@+id/signin_di"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@null" >
+
+        <ImageView
+            android:id="@+id/signin_attent"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:contentDescription="@string/imgcontentstring"
+            android:onClick="btonclik"
+            android:scaleType="fitXY"
+            android:src="@drawable/myqiandao" />
+    </RelativeLayout>
+    
+</RelativeLayout>

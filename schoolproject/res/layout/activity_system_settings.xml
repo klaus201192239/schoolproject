@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".UserCenterActivity" >
+
+    <RelativeLayout
+        android:id="@+id/system_lv_one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/sysset" >
+
+        <Button
+            android:id="@+id/system_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="onclick" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/system_lv_onell"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/system_lv_one"
+        android:background="#FFFFFF" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/system_lv_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_lv_onell"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:onClick="onclick"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="修 改 密 码"
+            android:textColor="#4D4D4D"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:src="@drawable/line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/system_lv_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_lv_two"
+        android:gravity="center"
+        android:onClick="onclick"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="版 本 检 查"
+            android:textColor="#4D4D4D"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:src="@drawable/line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/system_lv_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_lv_three"
+        android:gravity="center"
+        android:onClick="onclick"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="账 户 退 出"
+            android:textColor="#4D4D4D"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:src="@drawable/line" />
+    </LinearLayout>
+
+</RelativeLayout>

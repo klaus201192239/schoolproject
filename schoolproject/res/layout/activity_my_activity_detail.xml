@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    tools:context=".DetailActivity" >
+
+    <!-- title -->
+
+    <RelativeLayout
+        android:id="@+id/myactivitydetail_lv_one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/inacdetail" >
+
+        <Button
+            android:id="@+id/myactivitydetail_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclik" />
+
+        <Button
+            android:id="@+id/myactivitydetail_signin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/qitabaoming"
+            android:onClick="btonclik" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/myactivitydetail_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/myactivitydetail_di"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/myactivitydetail_lv_one"
+        android:scrollbars="none" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/myactivitydetail_di"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@null" >
+
+        <ImageView
+            android:id="@+id/myactivitydetail_quit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:contentDescription="@string/imgcontentstring"
+            android:onClick="btonclik"
+            android:scaleType="fitXY"
+            android:src="@drawable/quitbaoming" />
+    </RelativeLayout>
+
+</RelativeLayout>

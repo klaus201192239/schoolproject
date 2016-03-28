@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <!-- title -->
+
+    <RelativeLayout
+        android:id="@+id/teamlist_lv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/aboutteam" >
+
+        <Button
+            android:id="@+id/teamlist_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclik" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/teamlist_lv_choose"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/teamlist_lv_title"
+        android:gravity="center_vertical" 
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/teamlist_addbt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="btonclik"
+            android:src="@drawable/createtteamhui"
+            android:contentDescription="@string/imgcontentstring"
+            android:scaleType="fitXY"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/teamlist_thisbt"
+            android:layout_width="0dp"
+            android:src="@drawable/othertaem2"
+            android:contentDescription="@string/imgcontentstring"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:scaleType="fitXY"
+            android:onClick="btonclik" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/teamlist_lv_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teamlist_lv_choose"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/teamlist_tx_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="所 有 团 队"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/teamlist_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/teamlist_lv_one"
+        android:scrollbars="none" 
+        android:dividerHeight="3dp"
+        android:divider="#EFEFEF">
+    </ListView>
+
+</RelativeLayout>

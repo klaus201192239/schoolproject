@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    tools:context=".DetailActivity" >
+
+    <!-- title -->
+    
+    <RelativeLayout
+       android:id="@+id/detail_lv_one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/inacdetail">
+        
+        <Button
+            android:id="@+id/detail_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclik" />
+
+        <Button
+            android:id="@+id/detail_share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shareimg"
+            android:onClick="btonclik" />
+        
+    </RelativeLayout> 
+    
+    <ListView
+        android:id="@+id/detail_listVi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/detail_di"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/detail_lv_one"
+        android:scrollbars="none" 
+        android:divider="#00000000">
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/detail_di"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@null" >
+
+        <ImageView
+            android:id="@+id/detail_attent"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:scaleType="fitXY"
+            android:onClick="btonclik"
+            android:src="@drawable/rrriattend"
+            android:contentDescription="@string/imgcontentstring" />
+    </RelativeLayout>
+
+</RelativeLayout>

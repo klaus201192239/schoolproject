@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    tools:context=".incommentActivity" >
+
+    <!-- title -->
+
+    <RelativeLayout
+        android:id="@+id/incomment_lv_one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/allcomment" >
+
+        <Button
+            android:id="@+id/incomment_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclick" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/incomment_listVi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/incomment_di"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/incomment_lv_one"
+        android:layout_marginBottom="10dp"
+        android:dividerHeight="2dp"
+        android:divider="#FFFFFF"
+        android:scrollbars="none" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/incomment_di"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/incomment_input"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:paddingLeft="10dp"
+                android:background="@drawable/cominput"
+                android:layout_marginLeft="10dp"
+                android:hint="我也来说一句" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/incomment_upload"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/imgcontentstring"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/commentupload"
+                android:onClick="btonclick" />
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:paddingBottom="30dp"
+    android:background="#FFFFFF">
+
+    <!-- title -->    
+    
+     <RelativeLayout
+        android:id="@+id/signup_only_lv_one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/baomingtitle" >
+
+        <Button
+            android:id="@+id/signup_only_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclik" />
+        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/signup_only_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/signup_only_lv_one"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

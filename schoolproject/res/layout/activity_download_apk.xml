@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/downapk_lv_one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/sowtupdate" >
+
+        <Button
+            android:id="@+id/downapk_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclick" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/downapk_lv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/downapk_lv_one"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/imgcontentstring"
+            android:scaleType="fitXY"
+            android:src="@drawable/showme" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/downapk_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/downapk_lv_img"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="0%"
+        android:textColor="#000000" />
+
+    <ProgressBar
+        android:id="@+id/downapk_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/downapk_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"
+        android:max="100" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:text="温馨提示：如果因为意外情况，本系统无法更新，请到安卓应用市场下载本软件～"
+        android:textColor="#FFCC33"
+        android:textSize="12sp" />
+
+</RelativeLayout>

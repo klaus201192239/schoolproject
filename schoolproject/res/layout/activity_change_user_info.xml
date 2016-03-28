@@ -1,0 +1,370 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".RegisterSecondActivity" >
+
+    <!-- title -->
+
+    <RelativeLayout
+        android:id="@+id/changeinfo_lv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/userinfo" >
+
+        <Button
+            android:id="@+id/changeinfo_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclik" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/changeinfo_lv_title"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp" >
+
+            <RelativeLayout
+                android:id="@+id/changeinfo_lv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp" >
+
+                <TextView
+                    android:id="@+id/changeinfo_phone_txt"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="手机号码"
+                    android:textColor="#848484"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/changeinfo_phone"
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@id/changeinfo_phone_txt"
+                    android:background="@drawable/cominput"
+                    android:gravity="center"
+                    android:hint="请填写您真实手机号码"
+                    android:inputType="phone"
+                    android:selectAllOnFocus="true"
+                    android:textColor="#a9a9a9"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/changeinfo_lv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/changeinfo_lv_phone"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/changeinfo_tx_name"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="真实姓名"
+                    android:textColor="#848484"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/changeinfo_name"
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@id/changeinfo_tx_name"
+                    android:background="@drawable/cominput"
+                    android:gravity="center"
+                    android:hint="请填写您真实姓名"
+                    android:selectAllOnFocus="true"
+                    android:textColor="#a9a9a9"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/changeinfo_lv_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/changeinfo_lv_name"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/changeinfo_tx_sex"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="性     别"
+                    android:textColor="#848484"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/changeinfo_radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/changeinfo_tx_sex"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/changeinfo_radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#848484"
+                        android:text="男" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/changeinfo_radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#848484"
+                        android:text="女" >
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <!-- 选择学校 -->
+
+            <RelativeLayout
+                android:id="@+id/changeinfo_lv_select_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/changeinfo_lv_sex"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/changeinfo_tx_sname"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="选择学校"
+                    android:textColor="#848484"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/changeinfo_schoolname"
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@id/changeinfo_tx_sname"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/cominput"
+                    android:onClick="btonclik"
+                    android:paddingLeft="10dp"
+                    android:text="选择您的大学名称"
+                    android:textColor="#a9a9a9"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- 当前在读 -->
+
+            <RelativeLayout
+                android:id="@+id/changeinfo_lv_current"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/changeinfo_lv_select_school"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/changeinfo_tx_current"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="学     历"
+                    android:textColor="#848484"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/changeinfo_education"
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@id/changeinfo_tx_current"
+                    android:background="@drawable/cominput"
+                    android:entries="@array/educationArray"
+                    android:gravity="center"
+                    android:hint="请选择"
+                    android:paddingLeft="40dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- 学号 -->
+
+            <RelativeLayout
+                android:id="@+id/changeinfo_lv_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/changeinfo_lv_current"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/changeinfo_tx_id"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="学     号"
+                    android:textColor="#848484"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/changeinfo_stuid"
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@id/changeinfo_tx_id"
+                    android:background="@drawable/cominput"
+                    android:gravity="center"
+                    android:hint="请填写您的学号"
+                    android:selectAllOnFocus="true"
+                    android:textColor="#a9a9a9"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/changeinfo_lv_major"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/changeinfo_lv_id"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/changeinfo_tx_major"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="就读专业"
+                    android:textColor="#848484"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/changeinfo_major"
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@id/changeinfo_tx_major"
+                    android:background="@drawable/cominput"
+                    android:gravity="center"
+                    android:hint="请选择"
+                    android:paddingLeft="40dp"
+                    android:textColor="#a9a9a9"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- 入学年份 -->
+
+            <RelativeLayout
+                android:id="@+id/changeinfo_lv_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/changeinfo_lv_major"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/changeinfo_tx_year"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="入学年份"
+                    android:textColor="#848484"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/changeinfo_year"
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@id/changeinfo_tx_year"
+                    android:background="@drawable/cominput"
+                    android:entries="@array/timeYearArray"
+                    android:gravity="center"
+                    android:hint="请选择"
+                    android:paddingLeft="40dp"
+                    android:textColor="#a9a9a9"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/changeinfo_lv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/changeinfo_lv_year"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/changeinfo_tx_mail"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="邮     箱"
+                    android:textColor="#848484"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/changeinfo_mail"
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@id/changeinfo_tx_mail"
+                    android:background="@drawable/cominput"
+                    android:gravity="center"
+                    android:hint="请填写您的邮箱"
+                    android:selectAllOnFocus="true"
+                    android:textColor="#a9a9a9"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/changeinfo_upload"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/changeinfo_lv_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:alpha="0.8"
+                android:background="#E9C194"
+                android:gravity="center"
+                android:onClick="btonclik"
+                android:text="确认修改信息"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        
+    </ScrollView>
+
+</RelativeLayout>

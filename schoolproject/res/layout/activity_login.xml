@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDE084" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/login_rv_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/login_img_logo"
+                android:layout_width="131dp"
+                android:layout_height="55dp"
+                android:contentDescription="@string/imgcontentstring"
+                android:src="@drawable/nlogo"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_rv_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_rv_one"
+            android:layout_marginTop="90dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/login_userid"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="手机号码"
+                android:inputType="phone"
+                android:paddingLeft="3dp"
+                android:textColor="#787777"
+                android:textColorHint="#787777"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_rv_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_rv_two"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/login_pwd"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="您的密码"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingLeft="3dp"
+                android:selectAllOnFocus="true"
+                android:textColor="#787777"
+                android:textColorHint="#787777"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tablerow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_rv_three"
+            android:layout_marginTop="15dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/login_login"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/imgcontentstring"
+                android:onClick="btonclick"
+                android:scaleType="fitXY"
+                android:src="@drawable/logininput_meitu_1" />
+
+            <ImageView
+               android:id="@+id/login_getpwdback"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@id/login_login"
+                android:layout_below="@id/login_login"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/imgcontentstring"
+                android:onClick="btonclick"
+                android:scaleType="fitXY"
+                android:src="@drawable/loginpwd" />
+
+            <ImageView 
+                android:id="@+id/login_register"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_alignRight="@id/login_login"
+                android:layout_below="@id/login_login"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/imgcontentstring"
+                android:onClick="btonclick"
+                android:scaleType="fitXY"
+                android:src="@drawable/lognre" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

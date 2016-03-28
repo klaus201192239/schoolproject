@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <!-- title -->
+
+    <RelativeLayout
+        android:id="@+id/noticelist_lv_one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/noticetitle" >
+
+        <Button
+            android:id="@+id/noticelist_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclick" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/noticelist_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noticelist_lv_one"
+        android:divider="#EFEFEF"
+        android:dividerHeight="3dp"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

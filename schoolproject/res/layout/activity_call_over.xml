@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".CallOver" >
+
+    <RelativeLayout
+        android:id="@+id/callover_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/dianmingshezhi" >
+
+        <Button
+            android:id="@+id/callover_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclick" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/callover_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/callover_top"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="#FFCC33"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/callover_line1l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/callover_title"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/imgcontentstring"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+    <CheckBox
+        android:id="@+id/callover_checkl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/callover_line1l"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:checked="true"
+        android:text="基于地理位置进行点名"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/callover_line2l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/callover_checkl"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/imgcontentstring"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+    <TextView
+        android:id="@+id/callover_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/callover_line2l"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="请设置点名持续的时长："
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/callover_usel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/callover_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:checked="false"
+        android:text="点名没有时长限制"
+        android:textColor="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/callover_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/callover_usel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" >
+
+        <Spinner
+            android:id="@+id/callover_hour"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/integraldown"
+            android:entries="@array/caloverH"
+            android:paddingLeft="20dp"
+            android:textColor="#a9a9a9"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/callover_hour_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/callover_hour"
+            android:text="小时"
+            android:textColor="#a9a9a9"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/callover_minu"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/callover_hour_txt"
+            android:background="@drawable/integraldown"
+            android:entries="@array/caloverM"
+            android:paddingLeft="20dp"
+            android:textColor="#a9a9a9"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/callover_mimu_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/callover_minu"
+            android:text="分钟"
+            android:textColor="#a9a9a9"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/callover_line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/callover_set"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/imgcontentstring"
+        android:src="@drawable/line" />
+
+    <Button
+        android:id="@+id/callover_finish"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/callover_line3"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#E5E5E5"
+        android:onClick="btonclick"
+        android:textSize="16sp"
+        android:text="确   定"
+        android:textColor="#FFCC33" />
+
+    <TextView
+        android:id="@+id/callover_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:text="温馨提示：基于地理位置的点名，可以则呢哦按到达的"
+        android:textColor="#FFCC33"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

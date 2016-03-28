@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ChooseSchoolActivity" >
+    
+    <RelativeLayout
+        android:id="@+id/choose_school_lv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selectschool" >
+
+        <Button
+            android:id="@+id/registerinfo_school_giveup"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclik" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/reinfo_school_lv_line"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/choose_school_lv_title"
+        android:background="#FFFFFF" >
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/reinfo_school_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reinfo_school_lv_line"
+        android:background="#F5F5F5"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_weight="1" >
+
+            <Spinner
+                android:id="@+id/reinfosc_pro"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/cominput"
+                android:spinnerMode="dialog"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1" >
+
+            <Spinner
+                android:id="@+id/reinfosc_city"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/cominput"
+                android:spinnerMode="dialog"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/chooseSchool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layout_below="@id/reinfo_school_city"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1" >
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/choose_school_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:onClick="btonclik"
+                android:contentDescription="@string/imgcontentstring"
+                android:scaleType="fitXY"
+                android:src="@drawable/schoolfind" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/chooseSchool_nameList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chooseSchool"
+        android:layout_marginTop="3dp" />
+
+</RelativeLayout>

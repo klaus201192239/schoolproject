@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/activity_out_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/ouaactivity" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_out_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_out_title"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:baselineAligned="false"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/activity_out_all"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/activity_out_all"
+                android:onClick="to_table"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/imgcontentstring" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/activity_out_jiangzuo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/activity_out_jiangzuo"
+                android:onClick="to_table"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/imgcontentstring"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/activity_out_gongyi"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/gongyi"
+                android:onClick="to_table"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/imgcontentstring" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/activity_out_bisai"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/activity_outbisai"
+                android:onClick="to_table"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/imgcontentstring"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/activity_out_other"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/othercla"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/imgcontentstring"
+                android:onClick="to_table" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <me.maxwin.view.XListView
+        android:id="@+id/activity_out_xListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_out_list_xia"
+        android:layout_below="@id/activity_out_class"
+        android:cacheColorHint="#00000000"
+        android:divider="#EEEEEEEE"
+        android:dividerHeight="20dp"
+        android:scrollbars="none"  >
+    </me.maxwin.view.XListView>
+
+    <RelativeLayout
+        android:id="@+id/activity_out_list_xia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="4dp"
+        android:background="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#FFFFFF"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/activity_out_leftView"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/imgcontentstring"
+                android:layout_weight="1"
+                android:onClick="to_table"
+                android:src="@drawable/yard_square_selected2" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/activity_out_rightView"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:contentDescription="@string/imgcontentstring"
+                android:onClick="to_table"
+                android:src="@drawable/self_selected1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/activity_out_centerView"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:contentDescription="@string/imgcontentstring"
+            android:onClick="to_table"
+            android:src="@drawable/action_call1" />
+    </RelativeLayout>
+
+</RelativeLayout>

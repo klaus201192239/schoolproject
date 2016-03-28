@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"  
+    android:layout_width="match_parent"  
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"> 
+
+
+    <RelativeLayout
+        android:id="@+id/TeamVerify_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/aboutteam" >
+
+        <Button
+            android:id="@+id/TeamVerify_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclick" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/TeamVerify_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/TeamVerify_title"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/imgcontentstring"
+        android:src="@drawable/showme" />
+
+    <TextView
+        android:id="@+id/TeamVerify_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TeamVerify_img"
+        android:layout_marginLeft="6dp" 
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/TeamVerify_leader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TeamVerify_name"
+        android:layout_marginLeft="6dp" 
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/TeamVerify_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TeamVerify_leader"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="3dp"
+        android:background="@drawable/noticeinput"
+        android:hint="请输入口令"
+        android:inputType="number"
+        android:textColor="#a9a9a9"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/TeamVerify_finish"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.8"
+        android:text="确    定"
+        android:background="#E9C194"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/TeamVerify_pwd"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp" 
+        android:onClick="btonclick"/>
+
+</RelativeLayout>

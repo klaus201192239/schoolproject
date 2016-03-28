@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+        android:id="@+id/suggestion_lv_one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/liuyan" >
+
+        <Button
+            android:id="@+id/suggestion_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wm_back2"
+            android:onClick="btonclick" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/suggestion_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/suggestion_lv_one"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="感谢您的宝贵留言，这是我们成长的动力～"
+        android:background="@drawable/noticeinput"
+        android:textColor="#a9a9a9"
+        android:paddingLeft="6dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/suggestion_ok"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/suggestion_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="220dip"
+        android:background="#E5E5E5"
+        android:layout_span="2"
+        android:alpha="0.8"
+        android:onClick="btonclick"
+        android:text="提   交"
+        android:textColor="#FFCC33"
+        android:textSize="16sp" />
+
+</RelativeLayout>

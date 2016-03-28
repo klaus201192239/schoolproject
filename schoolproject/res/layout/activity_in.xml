@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/activity_team_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/inactivi" >
+    </RelativeLayout>
+
+    <me.maxwin.view.XListView
+        android:id="@+id/activity_team_xListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_team_list_xia"
+        android:layout_below="@id/activity_team_title"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:scrollbars="none" >
+    </me.maxwin.view.XListView>
+
+    <RelativeLayout
+        android:id="@+id/activity_team_list_xia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="4dp"
+        android:background="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#FFFFFF"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/activity_team_leftView"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:onClick="to_table"
+                android:src="@drawable/yard_square_selected1" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/activity_team_rightView"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:contentDescription="@string/imgcontentstring"
+                android:onClick="to_table"
+                android:src="@drawable/self_selected1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/activity_teame_centerView"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:contentDescription="@string/imgcontentstring"
+            android:onClick="to_table"
+            android:src="@drawable/action_call2" />
+    </RelativeLayout>
+
+</RelativeLayout>
